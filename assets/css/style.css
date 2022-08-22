@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family:var(---ff);
+    background-color: var(---background-color-dark);
+}
+
+:root {
+    ---ff:'Roboto Mono', monospace;
+
+    ---fw-regular:400;
+    ---fw-bold:700;
+
+    ---fs-headline:70px;
+    ---fs-sub-headline:60px;
+    ---fs-paragraph:28px;
+    ---fs-btn:25px;
+    ---fs-paragraph-small:20px;
+
+    ---background-color-dark:#3F3D56;
+    ---background-color-light:#E5E5E5;
+    ---accent-color-purple:#6C63FF;
+    ---accent-color-red:#FF002E;
+    ---font-color:#8885A7;
+    ---font-color-medium:#8985A8;
+    ---font-color-dark:#2F2E41;
+}
+
+/* FONTS AND SIZES*/
+
+h1 {
+    font-size:var(---fs-headline);
+}
+
+h2 {
+    font-size:var(---fs-sub-headline);
+    color:var(---font-color-dark);
+    margin-bottom:30px;
+}
+
+p {
+    font-size:var(---fs-paragraph);
+}
+
+button {
+    font-size:var(---fs-btn);
+}
+
+/* FONTS AND SIZES END*/
+/* HEADER */
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 29px 123px 0 122px;
+}
+
+ul {
+    display: flex;
+    justify-content: space-around;
+    margin-top:20px;
+}
+
+ul li {
+    list-style-type: none;
+    margin-left:128px;
+    font-size:20px;
+}
+
+
+ul a {
+    text-decoration: none;
+    color:var(---font-color-medium);
+}
+
+#logOut {
+    color:var(---accent-color-red);
+}
+/* HEADER END*/
+/* MAIN */
+main {
+    display: flex;
+    margin-top:20px;
+}
+
+.content {
+    color:var(---font-color-medium);
+    padding-top:180px;
+}
+
+.content button {
+    background-color:var(---accent-color-purple);
+    color:var(---font-color-dark);
+    margin-top:76px;
+    height:66.6px;
+    width:296px;
+    border-radius:10px;
+    border:none;
+    cursor: pointer;
+}
+/* MAIN END*/
+
+/* LOGIN WINDOW*/
+#modal {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+form {
+    background-color: #8985a8;
+    width: 80vw;
+    min-height: 80vh;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    padding-top: 8vh;
+    padding-bottom: 186px;
+    text-align: center;
+    -webkit-box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.7);
+    box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.7);
+    border-radius: 15px;
+}
+
+input {
+    padding: 10px 23px 17px;
+    font-family: Roboto Mono;
+    font-size: 30px;
+    line-height: 40px;
+    margin: 0 10px 30px;
+    width: 60%;
+}
+
+.username, .password {
+    background-color:var(---background-color-light);
+}
+
+/* LOGIN WINDOW END*/
